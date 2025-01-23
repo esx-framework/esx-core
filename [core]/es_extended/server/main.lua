@@ -317,6 +317,8 @@ AddEventHandler("playerDropped", function(reason)
 
     if xPlayer then
         TriggerEvent("esx:playerDropped", playerId, reason)
+        xPlayer.setMeta("lastPlaytime", xPlayer.getPlayTime())
+
         local job = xPlayer.getJob().name
         local currentJob = Core.JobsPlayerCount[job]
         Core.JobsPlayerCount[job] = ((currentJob and currentJob > 0) and currentJob or 1) - 1
@@ -355,6 +357,7 @@ AddEventHandler("esx:playerLogout", function(playerId, cb)
     local xPlayer = ESX.GetPlayerFromId(playerId)
     if xPlayer then
         TriggerEvent("esx:playerDropped", playerId)
+        xPlayer.setMeta("lastPlaytime", xPlayer.getPlayTime())
 
         Core.playersByIdentifier[xPlayer.identifier] = nil
         Core.SavePlayer(xPlayer, function()
