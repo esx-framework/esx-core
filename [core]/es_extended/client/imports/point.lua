@@ -39,8 +39,22 @@ function Point:constructor(properties)
 end
 
 function Point:delete()
-	ESX.RemovePointInternal(self.handle)
+    if not nearby[self.handle] then
+        return
+    end
+    nearby[self.handle] = nil
+
+    if self.leave then
+        self:leave()
+    end
+
+    if next(nearby) == nil then
+        loop = false
+    end
+
+    ESX.RemovePointInternal(self.handle)
 end
+
 
 function Point:toggle(hidden)
 	if hidden == nil then
