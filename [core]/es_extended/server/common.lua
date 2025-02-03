@@ -67,3 +67,11 @@ RegisterNetEvent("esx:ReturnVehicleType", function(Type, Request)
 end)
 
 GlobalState.playerCount = 0
+
+if Config.EntityLockdown.affectedBuckets > 0 then
+    for i=0, Config.EntityLockdown.affectedBuckets do
+        SetRoutingBucketEntityLockdownMode(i, Config.EntityLockdown.mode)
+    end
+else
+    SetRoutingBucketEntityLockdownMode(0, Config.EntityLockdown.mode)
+end
