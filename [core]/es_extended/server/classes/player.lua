@@ -52,10 +52,10 @@ function CreateExtendedPlayer(playerId, identifier, group, accounts, inventory, 
     if Config.Multichar then
         local startIndex = identifier:find(":", 1)
         if startIndex then
-            self.license = ("license%s"):format(identifier:sub(startIndex, identifier:len()))
+            self.license = ("%s%s"):format(Config.Identifer, identifier:sub(startIndex, identifier:len()))
         end
     else
-        self.license = ("license:%s"):format(identifier)
+        self.license = ("%s:%s"):format(Config.Identifer, identifier)
     end
 
     if type(self.metadata.jobDuty) ~= "boolean" then
