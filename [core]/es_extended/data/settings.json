@@ -1,0 +1,300 @@
+{
+    "es_extended": {
+        "HUD:10": {
+            "name": "Help Text",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:22": {
+            "name": "HUD Weapons",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:17": {
+            "name": "Saving Game",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "LogAdmins": {
+            "name": "Log Admins",
+            "value": false,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "discord:appId": {
+            "name": "App Id",
+            "value": "0",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "PaycheckInterval": {
+            "name": "Paycheck Interval",
+            "value": 7,
+            "dataType": "number",
+            "category": "General"
+        },
+        "AIPlates": {
+            "name": "AI Plate Text",
+            "value": "........",
+            "dataType": "string",
+            "category": "Adjustments"
+        },
+        "Paycheck": {
+            "name": "Player Paycheck",
+            "value": true,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "HUD:1": {
+            "name": "Wanted Stars",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "NPCDrops": {
+            "name": "NPC Drops",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HUD:21": {
+            "name": "HUD Components",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:assetName": {
+            "name": "Asset Name",
+            "value": "LargeIcon",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "discord:presence": {
+            "name": "Presence",
+            "value": "{player_name} [{player_id}] | {server_players}/{server_maxplayers}",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "HUD:16": {
+            "name": "Radio Stations",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "SocietyPayouts": {
+            "name": "Society Payouts",
+            "value": false,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "DisplayAmmo": {
+            "name": "Display Ammo",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HUD:20": {
+            "name": "Weapon Wheel Stats",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:buttonsUrl:2": {
+            "name": "Button 2 Url",
+            "value": "https://discord.esx-framework.org",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "SaveDeath": {
+            "name": "Save Death Status",
+            "value": true,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "HUD:2": {
+            "name": "Weapon Icon",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:buttonsLabel:1": {
+            "name": "Button 1 Label",
+            "value": "Join Server",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "LogPaycheck": {
+            "name": "Paycheck Logging",
+            "value": false,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "HUD:6": {
+            "name": "Vehicle Name",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:18": {
+            "name": "Game Stream",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:refresh": {
+            "name": "Refresh",
+            "value": 60000,
+            "dataType": "number",
+            "category": "Discord Activity"
+        },
+        "discord:assetText": {
+            "name": "Asset Text",
+            "value": "{server_name}",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "HUD:8": {
+            "name": "Vehicle Class",
+            "value": true,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:buttonsLabel:2": {
+            "name": "Button 2 Label",
+            "value": "Discord",
+            "dataType": "string",
+            "category": "Discord Activity"
+        },
+        "Scenarios": {
+            "name": "Scenarios",
+            "value": true,
+            "category": "Adjustments"
+        },
+        "MaxWeight": {
+            "name": "Max Weight",
+            "value": 24,
+            "dataType": "number",
+            "category": "General"
+        },
+        "HUD:9": {
+            "name": "Street Name",
+            "value": true,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:19": {
+            "name": "Weapon Wheel",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "DispatchServices": {
+            "name": "Dispatch Services",
+            "value": true,
+            "category": "Adjustments"
+        },
+        "AimAssist": {
+            "name": "Aim Assist",
+            "value": true,
+            "category": "Adjustments"
+        },
+        "HUD:4": {
+            "name": "MP Cash",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:15": {
+            "name": "Subtitle Text",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "PayCheckMultiplier": {
+            "name": "Off-Duty Paycheck Multiplier",
+            "value": 0.5,
+            "dataType": "number",
+            "category": "General"
+        },
+        "HUD:13": {
+            "name": "Cash Change",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "VehicleSeatShuff": {
+            "name": "Seat Shuffle",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HealthRegeneration": {
+            "name": "Health Regeneration",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HUD:7": {
+            "name": "Area Name",
+            "value": true,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:12": {
+            "name": "Floating Help Text 2",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "WantedLevel": {
+            "name": "Wanted Level",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HUD:3": {
+            "name": "Cash",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "HUD:14": {
+            "name": "Reticle",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "PVP": {
+            "name": "PVP",
+            "value": true,
+            "category": "Adjustments"
+        },
+        "VehicleRewards": {
+            "name": "Vehicle Rewards",
+            "value": false,
+            "category": "Adjustments"
+        },
+        "HUD:11": {
+            "name": "Floating Help Text 1",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "DefaultDuty": {
+            "name": "Default Duty",
+            "value": true,
+            "dataType": "boolean",
+            "category": "General"
+        },
+        "HUD:5": {
+            "name": "MP Message",
+            "value": false,
+            "dataType": "boolean",
+            "category": "HUD Components"
+        },
+        "discord:buttonsUrl:1": {
+            "name": "Button 1 Url",
+            "value": "fivem://connect/{server_endpoint}",
+            "dataType": "string",
+            "category": "Discord Activity"
+        }
+    }
+}

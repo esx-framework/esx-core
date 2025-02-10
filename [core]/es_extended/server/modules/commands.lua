@@ -763,3 +763,42 @@ ESX.RegisterCommand(
         },
     }
 )
+
+ESX.RegisterCommand(
+    "changeSetting",
+    "admin",
+    function(_, args)
+        args.value = args.value:sub(2)
+        print(("[^2Info^0] Setting ^5%s^0 changed to ^5%s^0 for ^5%s^0 "):format(args.key, args.value, args.resource))
+        SettingsHandler:Set(args.resource, args.key, args.value)
+    end,
+    true,
+    {
+        help = "Change Settings Value",
+        validate = false,
+        arguments = {
+            { name = "resource", help = "Resource Name", type = "string" },
+            { name = "key", help = "Settings Key", type = "string" },
+            { name = "value", help = TranslateCap("commandgeneric_playerid"), type = "merge" },
+        },
+    }
+)
+
+ESX.RegisterCommand(
+    "checkSetting",
+    "admin",
+    function(_, args)
+        local value = SettingsHandler:Get(args.resource, args.key)
+        print(("[^2Info^0] Setting ^5%s^0 - ^5%s^0: ^5%s^0 "):format(args.resource, args.key, value))
+    end,
+    true,
+    {
+        help = "Change Settings Value",
+        validate = true,
+        arguments = {
+            { name = "resource", help = "Resource Name", type = "string" },
+            { name = "key", help = "Settings Key", type = "string" },
+        },
+    }
+)
+

@@ -16,6 +16,7 @@ ESX.Game = {}
 ESX.Game.Utils = {}
 
 CreateThread(function()
+    Settings:Fetch()
     while not Config.Multichar do
         Wait(100)
 

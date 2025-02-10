@@ -33,6 +33,25 @@ function ESX.GetConfig()
     return Config
 end
 
+---@param key string
+---@return any
+function ESX.GetSetting(key)
+    local resource = GetInvokingResource() or "es_extended"
+    return ESX.GetResourceSetting(resource, key)
+end
+
+---@param resource string
+---@param key string
+---@return any
+function ESX.GetResourceSetting(resource, key)
+    local isServer = IsDuplicityVersion()
+    if isServer then
+        return SettingsHandler:Get(resource, key)
+    else
+        return Settings:Get(resource, key)
+    end
+end
+
 ---@param weaponName string
 ---@return number, table
 function ESX.GetWeapon(weaponName)

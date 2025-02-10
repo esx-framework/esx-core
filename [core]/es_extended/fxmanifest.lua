@@ -10,7 +10,6 @@ shared_scripts {
 
 	'shared/config/main.lua',
     'shared/config/weapons.lua',
-    'shared/config/adjustments.lua',
 
     'shared/main.lua',
     'shared/functions.lua',
@@ -23,6 +22,8 @@ server_scripts {
 
 	'server/common.lua',
 	'server/modules/callback.lua',
+    'server/modules/settings.lua',
+	'server/modules/defaultSettings.lua',
 	'server/classes/player.lua',
 	'server/classes/vehicle.lua',
 	'server/classes/overrides/*.lua',
@@ -41,6 +42,7 @@ server_scripts {
 client_scripts {
     'client/main.lua',
 	'client/functions.lua',
+    'client/modules/settings.lua',
 	'client/modules/wrapper.lua',
 	'client/modules/callback.lua',
     'client/modules/adjustments.lua',
