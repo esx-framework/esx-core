@@ -34,6 +34,18 @@ Config.RemoveHudComponents = {
     [22] = false, --HUD_WEAPONS
 }
 
+
+-----------------------------------------------------------
+-- Modes:
+-- "strict" = No entities can be created by clients at all. (Recommended)
+-- "relaxed" = Only script-owned entities created by clients are blocked.
+-- "inactive" = Clients can create any entity they want.
+-----------------------------------------------------------
+Config.EntityLockdown = {
+    mode = "strict",
+    affectedBuckets = 0, -- Set to 0 for default bucket, setting higher, will block buckets 0 -> value
+}
+
 -- Pattern string format
 --1 will lead to a random number from 0-9.
 --A will lead to a random letter from A-Z.
